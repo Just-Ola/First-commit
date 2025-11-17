@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .head {
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: sans-serif;
+            z-index: 1000;
+
+        }
+
+        .right-head {
+            display: flex;
+            margin-left: 20px;
+            gap: 20px;
+            margin-left: 20px;
+            align-items: center;
+            padding-left: 45px;
+        }
+
+        .mablak {
+            padding-top: 8px;
+            font-weight: 800;
+            font-size: medium;
+        }
+
+        .mablak a {
+            font-size: 15px;
+            font-family: sans-serif;
+            color: black;
+            text-decoration-line: none;
+        }
+
+        .mablak p {
+            margin-top: 4px;
+            font-size: 12px;
+            color: gray;
+        }
+
+        .head-details {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            gap: 25px;
+            margin-right: 20px;
+            margin-top: -2px;
+            align-items: center;
+        }
+
+        .head-details li {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .head-details li a {
+            text-decoration-line: none;
+            color: black;
+            font-size: 20px;
+            width: 100px;
+            text-align: center;
+            align-items: center;
+            transition: 0.25s;
+        }
+
+        .head-details li a:hover {
+            color: rgb(89, 89, 240);
+            transform: scale(1.1);
+        }
+
+        .contact a {
+            background-color: rgb(124, 124, 255);
+            padding: 10px 10px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .headd {
+            color: white;
+        }
+
+        .image {
+            background-image: url("https://t4.ftcdn.net/jpg/02/20/67/65/360_F_220676590_4zfuo3TKXbys7xkC4Nx0YYFcMzkCkHTf.jpg");
+            height: 600px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 0;
+            font-family: sans-serif;
+        }
+
+        .image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(27, 41, 116, 0.795);
+            z-index: 0;
+
+        }
+        .image-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+        .image-head{
+            font-size: 50px;
+            
+        }
+        .image-head span{
+            color: rgb(250, 76, 13);
+        }
+        .image-par{
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        .view{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .view li{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .view li a{
+            list-style-type: none;
+            text-decoration-line: none;
+            color: white;
+        }
+        .service{
+            background-color: rgb(100, 100, 255);
+            padding: 9px 20px;
+            border-radius: 5px;
+            font-weight: 800;
+            font-size: 15px;
+        }
+        .us{
+            border: 2px solid white;
+            padding: 5px 25px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="head">
+
+        <div class="right-head">
+
+            <div class="logo">
+
+                <img src="https://mablak.ng/mablak-logo.jpg" alt="" width="90px" height="60px">
+            </div>
+
+            <span class="mablak">
+                <a href=""> MABLAK Engineering Ltd</a>
+                <p>Building Excellence</p>
+
+            </span>
+
+        </div>
+
+
+        <ul class="head-details">
+            <li><a href="headd">Home</a></li>
+            <li><a href="headd">About</a></li>
+            <li><a href="headd">Services</a></li>
+            <li><a href="headd">Projects</a></li>
+            <li><a href="headd">Professionals</a></li>
+            <li class="contact"><a href="">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div class="image">
+
+        <div class="image-text">
+            <h1 class="image-head">
+            MABLAK Engineering
+            <span>Limited</span>
+        </h1>
+        <p class="image-par">Building Nigeria's Future with Excellence in Civil Engineering &
+            Construction</p>
+            
+        <ul class="view">
+          <li><a href="" class="service">View Our Services &rightarrow; </a></li>
+          <li><a href="" class="us">Contact Us</a></li>
+
+        </ul>
+         
+        </div>
+        
+    </div>
+
+
+
+</body>
+
+</html>

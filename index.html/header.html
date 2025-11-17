@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .one {
+            display: flex;
+            justify-content: space-between;
+            background-color: blue;
+            color: white;
+        }
+
+        .two {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            text-decoration-line: none;
+            gap: 50px;
+            font-weight: 50px;
+            font-size: 30px;
+        }
+
+        .two a {
+            color: rgb(255, 255, 255);
+            text-decoration-line: none;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .one {
+                background-color: black;
+            }
+
+        }
+
+        @media screen and (max-width: 800px) {
+            .one {
+                background-color: red;
+            }
+
+        }
+        
+        .three{
+             align-items: center;
+        }
+
+        .work-details{
+            border-bottom: 1px solid black;
+        }
+        .work-header{
+            padding: 20px;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="one">
+        <h1>codewithOla</h1>
+
+        <ul class="two">
+            <li><a href="Radio Button.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="three">
+
+
+    <details class="work-details" open>
+            <summary class="work-header work-frontend">Front-End Projects</summary>
+    
+    <div class="content">
+        Are you trying to launch your Front-End Career development?
+    </div>
+    </details>
+
+
+    <details class="work-details">
+        <summary class="work-header">Programming Languages</summary>
+        <div class="content"> Blahhh </div>
+    </details>
+
+    <details class="work-details">
+        <summary class="work-header">JavaScript Framework</summary>
+        <div class="content"> Blahh </div>
+    </details>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .list{
+        align-items: center;
+       }
+        .flex {
+            justify-content:left;
+            display:grid;
+            list-style: none;
+
+        }
+        .flex li a{
+            display: block;
+            border: 3px solid darkblue;
+            padding: 10px 10px;
+            margin: 05px;
+            text-decoration: none;
+            color: black;
+        } 
+
+        .list2{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: left;
+            list-style: none;
+    }
+        .list2 li a{
+            border: 4px solid darkblue;
+            padding: 10px 30px;
+            margin: 8px;
+            display: block;
+        }  
+       .list2 li a{
+        padding: 20px ;
+       }
+       .one{
+        display: flex;
+        justify-content: space-between;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+    <div class="list">
+    <h1>FLEX</h1>
+
+    
+
+        <ul class="flex">
+             <li><a href="">Item 1</a></li>
+             <li><a href="">Item 2</a></li>
+             <li><a href="">Item 3</a></li>
+             <li><a href="">Item4</a></li>
+        </ul>
+
+    </div>
+    <br>
+
+    <div>
+    <h2>GRID</h2>
+
+    <ul class="list2"> 
+        <li><a href="">Item 1</a></li>
+        <li><a href="">Item 2</a></li>
+        <li><a href="">Item 3</a></li>
+        <li><a href="">Item 4</a></li>
+    </ul>
+    </div>
+
+    </div>
+</body>
+</html>
